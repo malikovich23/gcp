@@ -1,7 +1,7 @@
 variable "vm_config" {
     type = map
     default = {
-        project = "ckad-302703"
+        project = "iaac-351916"
         region = "us-central1"
         zone = "us-central1-c"
         instance_name = "terraform-instance"

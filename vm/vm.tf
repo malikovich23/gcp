@@ -1,9 +1,9 @@
-resource "google.com_compute_instance" "vm_instance" {
+resource "google_compute_instance" "vm_instance" {
     name = var.vm_config["instance_name"]
     machine_type = var.vm_config["machine_type"]
     boot_disk {
         initialize_params {
-            image - var.vm_config["image"]
+            image = var.vm_config["image"]
         }
     }
     network_interface {
