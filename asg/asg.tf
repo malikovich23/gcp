@@ -3,7 +3,7 @@ resource "google_compute_autoscaler" "foobar" {
     project = var.asg_config["project"]
     name = var.asg_config["autoscaler"]
     target = google_compute_instance_group_manager.foobar.id
-    autoscalling_policy {
+    autoscaling_policy {
         max_replicas = var.asg_config["max_replicas"]
         min_replicas = var.asg_config["min_replicas"]
         cooldown_period = var.asg_config["cooldown_period"]
